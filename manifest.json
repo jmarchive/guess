@@ -1,0 +1,34 @@
+﻿{
+    "name":"guess!",
+    "short_name":"guess!",
+    "description":"A number-guessing game.",
+    "display":"standalone",
+    "start_url":"/guess/",
+    "lang":"zh-CN",
+    "orientation":"natural",
+    "scope":"/guess/",
+    "id":"/guess/",
+    "prefer_related_applications":false,
+    "theme_color": "#00FFFF",
+    "background_color":"#00FFFF",
+    "icons":[
+        {
+            "src": "512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}

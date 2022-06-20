@@ -1,4 +1,5 @@
-﻿var mode = 4, answer, chances = 0;
+﻿if(navigator.serviceWorker !== undefined) navigator.serviceWorker.register("serviceworker.js");
+var mode = 4, answer, chances = 0;
 $("#inputs *").attr("type", "text");
 $("#inputs *").attr("maxlength", "1");
 $.Events($("#inputs *"),"keydown",e=>{
