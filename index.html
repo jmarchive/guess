@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,shrink-to-fit=no" />
+        <meta name="theme-color" content="#5C6BE0" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="A number-guessing game.">
+        <link rel="stylesheet" href="main.css" />
+        <title>guess</title>
+    </head>
+    <body>
+        <div id="root">
+            <h1 id="about" onclick="about()">guess!</h1>
+            <div id="mode-select">
+                <label><input id="four-checkbox" type="radio" checked name="mode" />4数字</label>&emsp;
+                <label><input id="six-checkbox" type="radio" name="mode" />6数字</label>&emsp;
+                <button id="start-game" onclick="startGame()">开始游戏</button>
+            </div>
+            <div id="game" hidden>
+                <div id="inputs">
+                    <input id="number1" />&ensp;
+                    <input id="number2" />&ensp;
+                    <input id="number3" />&ensp;
+                    <input id="number4" />&ensp;
+                    <input id="number5" hidden />&ensp;
+                    <input id="number6" hidden />
+                </div>
+                <div id="panel-container">
+                    <div id="left">
+                        <div id="errors">目前无错误</div>
+                        <div id="oneoutput">
+                            <div>你猜到了&nbsp;<span id="one-allcorrect">0</span>&nbsp;个位置与数值均相同的答案，</div>
+                            <div>猜到了&nbsp;<span id="one-onecorrect">0</span>&nbsp;个数值相同的答案，</div>
+                            <div>你还有&nbsp;<span id="chances">0</span>&nbsp;次机会，加油啊</div>
+                        </div>
+                    </div>
+                    <div id="right">
+                        <div id="history">历史记录见下表：</div>
+                    </div>
+                </div>
+                <textarea id="output" readonly></textarea>
+            </div>
+        </div>
+    </body>
+    <script src="luery.min.js"></script>
+    <script src="main.js"></script>
+</html>
