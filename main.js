@@ -48,6 +48,8 @@ function startGame(){
         mode = 4;
         chances = 15;
         answer = Array.from(generateNotRepeat(4));
+        $("#number5").hide();
+        $("#number6").hide();
     }
     else if($("#six-checkbox").checked){
         mode = 6;
