@@ -42,7 +42,6 @@ $.Events($("#inputs *"),"input",e=>{
 function startGame(){
     $("#game").show();
     disableSelect();
-    $("#number1").focus();
     $("#inputs *").attr("disabled",null);
     if($("#four-checkbox").checked){
         mode = 4;
@@ -63,6 +62,7 @@ function startGame(){
     $("#one-allcorrect").innerText = "0";
     $("#one-onecorrect").innerText = "0";
     $("#chances").innerText = chances;
+    $("#number1").focus();
 }
 function forward(number){
     $(`#number${number + 1}`).focus();
