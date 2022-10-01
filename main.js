@@ -132,7 +132,7 @@ function about(){
     else $("#about").innerHTML = `
         经典复刻计划之猜数游戏<br />
         由 LJM12914 制作。<br />
-        <a href='https://github.com/ljm12914/guess'>https://github.com/ljm12914/guess</a>
+        <a target='_blank' href='https://github.com/ljm12914/guess'>https://github.com/ljm12914/guess</a>
     `;
     toggledAbout = !toggledAbout;
 }
