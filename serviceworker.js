@@ -1,4 +1,4 @@
-﻿var cacheName = "oinkedit";
+﻿var cacheName = "guess";
 var cacheFiles = [//没有被引用但很可能需要的文件
     
 ];
